@@ -14,7 +14,7 @@ export default class Controller extends View {
 
   constructor() {
     const params = {
-      tag: Tags.DIV,
+      tag: Tags.SECTION,
       classNames: [CssClasses.CONTROLLER],
     };
     super(params);
@@ -40,6 +40,5 @@ export default class Controller extends View {
       btnRace,
       btnGenerate
     );
-    console.log(this.controller)
   }
 }

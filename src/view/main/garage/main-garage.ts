@@ -2,6 +2,7 @@ import View from "../../view";
 import { CssClasses } from "../../../util/const/css-classes";
 import { Tags } from "../../../util/const/tags";
 import Controller from "./controller/controller";
+import GameSpace from "./game-space/game-space";
 
 export default class MainGarage extends View {
   private mainGarage!: HTMLElement;
@@ -18,6 +19,8 @@ export default class MainGarage extends View {
   addController() {
     const controller = new Controller();
     controller.addItems();
-    this.mainGarage.append(controller.getHtmlElement()!);
+    const gameSpace = new GameSpace();
+    gameSpace.addItems()
+    this.mainGarage.append(controller.getHtmlElement()!, gameSpace.getHtmlElement()!);
   }
 }

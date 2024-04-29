@@ -4,5 +4,12 @@ export const CssClasses = {
   BTN: "button",
   INPUT: "input",
   CONTROLLER: "controller",
-  MAIN: "main"
+  MAIN: "main",
+  GAMESPACE: "game-space",
+  RACECOUNTER: "race-counter",
+  PAGECOUNTER: "page-counter",
+  RACEFIELD: "race-field",
+  RACENAME: "race-name",
+  RACEIMG: "race-img",
+  FINISHIMG: "finish-img",
 };

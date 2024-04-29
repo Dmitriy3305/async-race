@@ -4,5 +4,7 @@ export const Tags = {
   BTN: "button",
   INPUT: "input",
   DIV: "div",
-  MAIN: "main"
+  MAIN: "main",
+  SECTION: "section",
+  IMG: "img",
 };
