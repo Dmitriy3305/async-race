@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: dotted;
-  max-height: 8vw;
+  max-height: 6.5vw;
 }
 
 .container {
@@ -14,15 +14,12 @@
 
 .finish-img {
   margin-right: 10vw;
+  width: 10vw;
 }
 .race-img {
   position: absolute;
-  margin-top: 1.5vw;
   margin-left: 30vw;
+  height: 9vw;
+  width: 10vw;
 }
 
-.race-img,
-.finish-img {
-  width: 10vw;
-  height: 9vw;
-}

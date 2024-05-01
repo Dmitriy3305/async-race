@@ -16,9 +16,9 @@ export default class HeaderView extends View {
     this.headerElement = this.getHtmlElement()!;
   }
 
-  addNav() {
+  addNav(mainGarage: HTMLElement, mainWinners: HTMLElement) {
     const navView = new NavView();
     this.headerElement.appendChild(navView.getHtmlElement()!);
-    navView.addBtn();
+    navView.addBtn(mainGarage, mainWinners);
   }
 }
