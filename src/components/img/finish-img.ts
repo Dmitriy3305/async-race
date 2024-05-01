@@ -9,6 +9,8 @@ export default class FinishImg extends View {
       classNames: [CssClasses.FINISHIMG],
     };
     super(params);
-    this.viewElementCreator.getElement()!.setAttribute("src", "../../../public/finish.svg");
+    this.viewElementCreator
+      .getElement()!
+      .setAttribute("src", "../../../public/finish.svg");
   }
 }

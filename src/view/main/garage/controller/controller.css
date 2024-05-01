@@ -1,0 +1,9 @@
+.controller {
+  display: grid;
+  grid-template-columns: repeat(3, 14vw);
+  grid-auto-rows: 1fr;
+  gap: 1vw;
+  justify-content: left;
+  align-items: center;
+  max-width: 50vw;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1vw;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.button {
+  max-width: 30vw;
+  max-height: 5vw;
+  min-width: 14vw;
+  height: 2vw;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background: #0b63f6;
+  box-shadow: 0 5px 0 #003cc5;
+}
+
+.button:hover {
+  background: #003cc5;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+.input {
+  max-width: 30vw;
+  min-width: 14vw;
+  height: 2vw;
+}

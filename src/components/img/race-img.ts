@@ -9,6 +9,9 @@ export default class RaceImg extends View {
       classNames: [CssClasses.RACEIMG],
     };
     super(params);
-    this.viewElementCreator.getElement()!.setAttribute("src", "../../../public/race-car.svg");
+    this.viewElementCreator
+      .getElement()!
+      .setAttribute("src", "../../../public/race-car.svg");
+    this.viewElementCreator.getElement()!.setAttribute("fill", "#aaa");
   }
 }

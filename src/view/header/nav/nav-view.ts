@@ -4,6 +4,7 @@ import { Tags } from "../../../util/const/tags";
 import './nav-view.css';
 import BtnGarage from "../../../components/buttons/btn-garage";
 import BtnWinners from "../../../components/buttons/btn-winners";
+import './nav-view.css'
 
 export default class NavView extends View {
   private navElement!: HTMLElement;

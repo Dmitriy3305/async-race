@@ -1,0 +1,5 @@
+.main-garage {
+  display: flex;
+  flex-direction: column;
+  margin: 1vw;
+}

@@ -4,7 +4,7 @@ export const CssClasses = {
   BTN: "button",
   INPUT: "input",
   CONTROLLER: "controller",
-  MAIN: "main",
+  MAINGARAGE: "main-garage",
   GAMESPACE: "game-space",
   RACECOUNTER: "race-counter",
   PAGECOUNTER: "page-counter",
@@ -12,4 +12,5 @@ export const CssClasses = {
   RACENAME: "race-name",
   RACEIMG: "race-img",
   FINISHIMG: "finish-img",
+  CONTAINER: "container",
 };

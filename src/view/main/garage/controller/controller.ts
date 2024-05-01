@@ -8,6 +8,7 @@ import InputReadOnly from "../../../../components/inputs/input-readonly";
 import BtnUpdate from "../../../../components/buttons/btn-update";
 import BtnRace from "../../../../components/buttons/btn-race";
 import BtnGenerate from "../../../../components/buttons/btn-generate";
+import "./controller.css";
 
 export default class Controller extends View {
   private controller!: HTMLElement;
