@@ -3,4 +3,5 @@ export interface ElementParams {
   classNames?: string[];
   textContent?: string;
   callback?: Function;
+  id?: number;
 }

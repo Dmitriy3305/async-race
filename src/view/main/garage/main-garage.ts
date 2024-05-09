@@ -21,7 +21,6 @@ export default class MainGarage extends View {
     const controller = new Controller();
     controller.addItems();
     const gameSpace = new GameSpace();
-    gameSpace.addItems();
     this.mainGarage.append(
       controller.getHtmlElement()!,
       gameSpace.getHtmlElement()!

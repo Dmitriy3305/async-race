@@ -14,25 +14,25 @@ import "./race-field.css";
 export default class RaceField extends View {
   private raceField!: HTMLElement;
 
-  constructor() {
+  constructor(color: string, id: number, name: string) {
     const params = {
       tag: Tags.DIV,
       classNames: [CssClasses.RACEFIELD],
     };
     super(params);
     this.raceField = this.getHtmlElement()!;
-    this.addItems();
+    this.addItems(color, id, name);
   }
 
-  addItems() {
-    const container = new Container().getHtmlElement()!;
+  addItems(color: string, id: number, name: string) {
+    const container = new Container(id).getHtmlElement()!;
     container.append();
     const btnSelect = new BtnSelect();
     const btnRemove = new BtnRemove();
-    const raceName = new RaceName("Tesla");
+    const raceName = new RaceName(name);
     const btnStart = new BtnStart();
     const btnStop = new BtnStop();
-    const raceImg = new RaceImg();
+    const raceImg = new RaceImg(color);
     const finishImg = new FinishImg();
     container.append(
       btnSelect.getHtmlElement()!,
