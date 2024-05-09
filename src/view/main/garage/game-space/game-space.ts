@@ -33,7 +33,7 @@ export default class GameSpace extends View {
   }
 
   addItems(carsData: Car[]) {
-    const raceCounter = new RaceCounter(5).getHtmlElement()!;
+    const raceCounter = new RaceCounter(carsData.length).getHtmlElement()!;
     const pageCounter = new PageCounter(5).getHtmlElement()!;
     this.gameSpace.append(raceCounter, pageCounter);
     carsData.forEach((car) => {

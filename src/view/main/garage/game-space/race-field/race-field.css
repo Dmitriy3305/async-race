@@ -9,7 +9,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1vw;
-  position: relative;
 }
 
 .finish-img {
@@ -17,8 +16,7 @@
   width: 10vw;
 }
 .race-img {
-  position: absolute;
-  margin-left: 30vw;
+  margin-top: -3vw;
   height: 9vw;
   width: 10vw;
 }
