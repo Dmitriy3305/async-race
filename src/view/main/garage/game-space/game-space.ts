@@ -7,6 +7,7 @@ import RaceField from "./race-field/race-field";
 import "./game-space.css";
 import { getCars } from "../../../../api/getCars";
 import { Car } from "../../../../interfaces/car";
+import { store } from "../../../../store/store";
 
 export default class GameSpace extends View {
   private gameSpace!: HTMLElement;
@@ -33,7 +34,7 @@ export default class GameSpace extends View {
   }
 
   addItems(carsData: Car[]) {
-    const raceCounter = new RaceCounter(carsData.length).getHtmlElement()!;
+    const raceCounter = new RaceCounter(store.raceCount).getHtmlElement()!;
     const pageCounter = new PageCounter(5).getHtmlElement()!;
     this.gameSpace.append(raceCounter, pageCounter);
     carsData.forEach((car) => {
@@ -44,5 +45,9 @@ export default class GameSpace extends View {
       ).getHtmlElement()!;
       this.gameSpace.appendChild(raceField);
     });
+  }
+
+  public addRaceField(raceField: HTMLElement) {
+    this.gameSpace.appendChild(raceField);
   }
 }

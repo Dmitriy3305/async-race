@@ -3,12 +3,13 @@ import View from "../../view/view";
 
 export default class RaceImg extends View {
   color: string;
-  constructor(color: string) {
+  constructor(color: string, id: number) {
     const params = {
       tag: Tags.DIV,
     };
     super(params);
     this.color = color;
+    this.viewElementCreator.getElement()!.setAttribute("id", id.toString());
     this.getHtmlElement()!.innerHTML = `
     <svg class="race-img" height="100px" width="100px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
     viewBox="0 0 512 512"  xml:space="preserve">

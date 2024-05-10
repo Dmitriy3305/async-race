@@ -25,14 +25,14 @@ export default class RaceField extends View {
   }
 
   addItems(color: string, id: number, name: string) {
-    const container = new Container(id).getHtmlElement()!;
+    const container = new Container().getHtmlElement()!;
     container.append();
     const btnSelect = new BtnSelect();
     const btnRemove = new BtnRemove();
     const raceName = new RaceName(name);
     const btnStart = new BtnStart();
     const btnStop = new BtnStop();
-    const raceImg = new RaceImg(color);
+    const raceImg = new RaceImg(color, id);
     const finishImg = new FinishImg();
     container.append(
       btnSelect.getHtmlElement()!,

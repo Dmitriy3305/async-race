@@ -25,9 +25,11 @@ export default class Controller extends View {
   addItems() {
     const inputText = new InputText().getHtmlElement()!;
     const inputNewColor = new InputColor().getHtmlElement()!;
+    inputNewColor.setAttribute("id", "color-for-create");
     const btnCreate = new BtnCreate().getHtmlElement()!;
     const inputReadOnly = new InputReadOnly().getHtmlElement()!;
     const inputChangeColor = new InputColor().getHtmlElement()!;
+    inputChangeColor.setAttribute("id", "color-for-update");
     const btnUpdate = new BtnUpdate().getHtmlElement()!;
     const btnRace = new BtnRace().getHtmlElement()!;
     const btnGenerate = new BtnGenerate().getHtmlElement()!;
