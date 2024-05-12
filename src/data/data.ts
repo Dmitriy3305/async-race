@@ -28,7 +28,7 @@ export const carsName = [
     model: "Jetta",
   },
   {
-    brend: "Mercedes-Benz",
+    brend: "Mercedes",
     model: "GLC",
   },
   {
@@ -53,7 +53,7 @@ export const carsName = [
   },
   {
     brend: "Jeep",
-    model: "Grand Cherokee",
+    model: "Cherokee",
   },
   {
     brend: "Subaru",
@@ -88,10 +88,6 @@ export const carsName = [
     model: "TLX",
   },
   {
-    brend: "Bentley",
-    model: "Continental",
-  },
-  {
     brend: "Peugeot",
     model: "208",
   },
@@ -102,10 +98,6 @@ export const carsName = [
   {
     brend: "Skoda",
     model: "Octavia",
-  },
-  {
-    brend: "Rolls-Royce",
-    model: "Phantom",
   },
   {
     brend: "Bugatti",
