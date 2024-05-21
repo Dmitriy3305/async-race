@@ -5,9 +5,10 @@ import RaceCounter from "./race-counter/race-counter";
 import PageCounter from "./page-counter/page-counter";
 import RaceField from "./race-field/race-field";
 import "./game-space.css";
-import { getCars } from "../../../../api/getCars";
+import { getCars } from "../../../../api/get-cars";
 import { Car } from "../../../../interfaces/car";
 import { store } from "../../../../store/store";
+import { selectCar } from "../../../../util/select-car";
 
 export default class GameSpace extends View {
   private gameSpace!: HTMLElement;
@@ -20,6 +21,9 @@ export default class GameSpace extends View {
     super(params);
     this.gameSpace = this.getHtmlElement()!;
     this.loadCars();
+    this.getHtmlElement()!.addEventListener("click", (event) => {
+      this.handleClick(event);
+    });
   }
 
   async loadCars() {
@@ -49,5 +53,27 @@ export default class GameSpace extends View {
 
   public addRaceField(raceField: HTMLElement) {
     this.gameSpace.appendChild(raceField);
+  }
+
+  handleClick(event: MouseEvent) {
+    const buttonClicked = event.target as HTMLElement;
+    const containerTarget = buttonClicked.parentElement;
+    const raceFieldTarget = containerTarget?.parentElement;
+
+    switch (buttonClicked.textContent) {
+      case "SELECT":
+        selectCar(raceFieldTarget!);
+        break;
+      case "REMOVE":
+        console.log("REMOVE");
+        break;
+      case "START":
+        console.log("START");
+        break;
+      case "STOP":
+        console.log("STOP");
+        break;
+      default:
+    }
   }
 }

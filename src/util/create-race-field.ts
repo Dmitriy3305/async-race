@@ -1,6 +1,6 @@
 import RaceField from "../view/main/garage/game-space/race-field/race-field";
 import { store } from "../store/store";
-import { createCar } from "../api/createCar";
+import { createCar } from "../api/create-car";
 
 export const createRaceField = () => {
   const gameSpace = document.querySelector(".game-space");

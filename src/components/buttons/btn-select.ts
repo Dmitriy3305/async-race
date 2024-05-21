@@ -8,7 +8,6 @@ export default class BtnSelect extends View {
       tag: Tags.BTN,
       classNames: [CssClasses.BTN],
       textContent: "SELECT",
-      callback: () => console.log("Button clicked"),
     };
     super(params);
   }

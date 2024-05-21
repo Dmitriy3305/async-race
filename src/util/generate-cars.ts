@@ -1,6 +1,6 @@
 import RaceField from "../view/main/garage/game-space/race-field/race-field";
 import { store } from "../store/store";
-import { createCar } from "../api/createCar";
+import { createCar } from "../api/create-car";
 import { getRandomColor } from "./get-random-color";
 import { getRandomName } from "./get-random-name";
 

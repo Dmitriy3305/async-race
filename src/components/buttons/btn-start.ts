@@ -8,7 +8,6 @@ export default class BtnStart extends View {
       tag: Tags.BTN,
       classNames: [CssClasses.BTN],
       textContent: "START",
-      callback: () => console.log("Button clicked"),
     };
     super(params);
   }

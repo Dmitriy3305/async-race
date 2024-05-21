@@ -9,6 +9,7 @@ export default class RaceImg extends View {
     };
     super(params);
     this.color = color;
+    this.viewElementCreator.getElement()!.setAttribute("class", "img-container");
     this.viewElementCreator.getElement()!.setAttribute("id", id.toString());
     this.getHtmlElement()!.innerHTML = `
     <svg class="race-img" height="100px" width="100px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
