@@ -10,6 +10,7 @@ import { Car } from "../../../../interfaces/car";
 import { store } from "../../../../store/store";
 import { selectCar } from "../../../../util/select-car";
 import { deleteRaceField } from "../../../../util/delete-race-field";
+import { startCar } from "../../../../util/start-car";
 
 export default class GameSpace extends View {
   private gameSpace!: HTMLElement;
@@ -69,7 +70,7 @@ export default class GameSpace extends View {
         deleteRaceField(raceFieldTarget!);
         break;
       case "START":
-        console.log("START");
+        startCar(raceFieldTarget!);
         break;
       case "STOP":
         console.log("STOP");
