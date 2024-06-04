@@ -1,7 +1,6 @@
 import View from "../../../../../view/view";
 import { CssClasses } from "../../../../../util/const/css-classes";
 import { Tags } from "../../../../../util/const/tags";
-import "./page-counter.css";
 
 export default class PageCounter extends View {
   constructor(count: number) {

@@ -1,9 +1,12 @@
 .controller {
-  display: grid;
-  grid-template-columns: repeat(3, 14vw);
-  grid-auto-rows: 1fr;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1vw;
-  justify-content: left;
-  align-items: center;
-  max-width: 50vw;
+}
+.container-create,
+.container-update,
+.container-race-generate {
+  display: flex;
+  gap: 1vw;
 }

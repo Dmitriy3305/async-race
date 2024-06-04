@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   border-bottom: dotted;
-  max-height: 6.5vw;
 }
 
 .container {
@@ -12,13 +11,14 @@
 }
 
 .finish-img {
-  margin-right: 13vw;
-  width: 10vw;
+  margin-right: 10vw;
+  width: 4rem;
 }
 .race-img {
-  margin-top: -3vw;
-  height: 9vw;
-  width: 10vw;
+  margin-top: -1.5rem;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: -1rem;
 }
 
 @keyframes fireAnimation {
@@ -43,14 +43,14 @@
 .fire::before {
   content: "";
   position: absolute;
-  top: -1.5vw;
-  left: 6vw;
+  top: -1.5rem;
+  left: 6rem;
   transform: translateX(-50%);
-  width: 3vw;
-  height: 3vw;
+  width: 3rem;
+  height: 3rem;
   background: url("../../../../../../public/fire.svg") no-repeat center center;
   background-size: contain;
   animation: fireAnimation 0.5s infinite;
   pointer-events: none;
-  z-index: 999;
+  z-index: 1;
 }
