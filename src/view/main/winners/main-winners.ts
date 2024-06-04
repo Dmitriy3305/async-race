@@ -3,7 +3,6 @@ import { CssClasses } from "../../../util/const/css-classes";
 import { Tags } from "../../../util/const/tags";
 import PageCounter from "./page-counter/page-counter";
 import WinnersCounter from "./winners-counter/winners-counter";
-import './main-winners.css';
 
 export default class MainWinners extends View {
   mainWinners: HTMLElement;
