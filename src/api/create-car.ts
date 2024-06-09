@@ -1,4 +1,5 @@
 import { Car } from "../interfaces/car";
+import { store } from "../store/store";
 
 export async function createCar(color: string, name: string) {
   try {
@@ -12,6 +13,7 @@ export async function createCar(color: string, name: string) {
     });
     if (response.ok) {
       const data: Car = await response.json();
+      store.raceCount++;
       return data;
     } else {
       throw new Error("Error: " + response.status);

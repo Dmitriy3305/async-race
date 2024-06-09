@@ -7,4 +7,5 @@ export const store: Store = {
   colorForUpdate: "#008614",
   raceCount: 4,
   raceField: null,
+  currentPage: 1,
 };

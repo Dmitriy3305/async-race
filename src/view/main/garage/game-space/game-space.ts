@@ -2,7 +2,6 @@ import { CssClasses } from "../../../../util/const/css-classes";
 import { Tags } from "../../../../util/const/tags";
 import View from "../../../view";
 import RaceCounter from "./race-counter/race-counter";
-import PageCounter from "./page-counter/page-counter";
 import RaceField from "./race-field/race-field";
 import "./game-space.css";
 import { getCars } from "../../../../api/get-cars";
@@ -11,6 +10,7 @@ import { store } from "../../../../store/store";
 import { selectCar } from "../../../../util/select-car";
 import { deleteRaceField } from "../../../../util/delete-race-field";
 import { startCar } from "../../../../util/start-car";
+import { hideRacefield } from "../../../../util/hide-race-field";
 
 export default class GameSpace extends View {
   private gameSpace!: HTMLElement;
@@ -41,8 +41,7 @@ export default class GameSpace extends View {
 
   addItems(carsData: Car[]) {
     const raceCounter = new RaceCounter(store.raceCount).getHtmlElement()!;
-    const pageCounter = new PageCounter(5).getHtmlElement()!;
-    this.gameSpace.append(raceCounter, pageCounter);
+    this.gameSpace.append(raceCounter);
     carsData.forEach((car) => {
       const raceField = new RaceField(
         car.color,
@@ -50,6 +49,7 @@ export default class GameSpace extends View {
         car.name
       ).getHtmlElement()!;
       this.gameSpace.appendChild(raceField);
+      hideRacefield();
     });
   }
 

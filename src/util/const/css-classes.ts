@@ -15,4 +15,7 @@ export const CssClasses = {
   RACEIMG: "race-img",
   FINISHIMG: "finish-img",
   CONTAINER: "container",
+  NAVPAGES: "nav-pages",
+  PREV: "prev",
+  NEXT: "next"
 };

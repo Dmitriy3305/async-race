@@ -5,4 +5,5 @@ export interface Store {
   colorForUpdate: string;
   raceCount: number;
   raceField: HTMLElement | null;
+  currentPage: number;
 }

@@ -16,6 +16,7 @@ export default class App {
   createView() {
     this.mainGarage = new MainGarage();
     this.mainGarage.addController();
+    this.mainGarage.addNavPages();
     this.mainWinners = new MainWinners();
     this.header = new HeaderView();
     this.header.addNav(

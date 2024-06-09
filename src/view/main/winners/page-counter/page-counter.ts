@@ -7,7 +7,7 @@ export default class PageCounter extends View {
     const params = {
       tag: Tags.DIV,
       classNames: [CssClasses.PAGECOUNTER],
-      textContent: `Page #${count}`,
+      textContent: `${count}`,
     };
     super(params);
   }

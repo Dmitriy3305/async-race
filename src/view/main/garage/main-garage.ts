@@ -4,6 +4,7 @@ import { Tags } from "../../../util/const/tags";
 import Controller from "./controller/controller";
 import GameSpace from "./game-space/game-space";
 import "./main-garage.css";
+import NavPages from "./navigation-pages/navigation-pages";
 
 export default class MainGarage extends View {
   private mainGarage!: HTMLElement;
@@ -25,5 +26,11 @@ export default class MainGarage extends View {
       controller.getHtmlElement()!,
       gameSpace.getHtmlElement()!
     );
+  }
+
+  addNavPages() {
+    const navPages = new NavPages();
+    navPages.addItems();
+    this.mainGarage.append(navPages.getHtmlElement()!);
   }
 }
