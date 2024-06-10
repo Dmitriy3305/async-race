@@ -44,10 +44,10 @@
   content: "";
   position: absolute;
   top: -1.5rem;
-  left: 6rem;
+  left: 2rem;
   transform: translateX(-50%);
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background: url("../../../../../../public/fire.svg") no-repeat center center;
   background-size: contain;
   animation: fireAnimation 0.5s infinite;
