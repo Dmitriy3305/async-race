@@ -11,6 +11,7 @@ import { selectCar } from "../../../../util/select-car";
 import { deleteRaceField } from "../../../../util/delete-race-field";
 import { startCar } from "../../../../util/start-car";
 import { hideRacefield } from "../../../../util/hide-race-field";
+import { stopCar } from "../../../../util/stop-car";
 
 export default class GameSpace extends View {
   private gameSpace!: HTMLElement;
@@ -73,7 +74,7 @@ export default class GameSpace extends View {
         startCar(raceFieldTarget!);
         break;
       case "STOP":
-        console.log("STOP");
+        stopCar(raceFieldTarget!);
         break;
       default:
     }

@@ -2,7 +2,7 @@ import { getMotionParams } from "../api/get-motion-params";
 import { MotionParams } from "../interfaces/motion-params";
 import { startAnimation } from "./start-animation";
 import { switchEngineToDrive } from "../api/switch-engine-to-drive";
-import { stopAnimation } from "./stop-animation";
+import { getCrash } from "./get-crash";
 
 export const startCar = async (raceField: HTMLElement) => {
   const targetElement = raceField.querySelector(
@@ -18,7 +18,7 @@ export const startCar = async (raceField: HTMLElement) => {
     startAnimation(time, targetElement!);
     const response = await switchEngineToDrive(idTargetElement);
     if (response!.success === false) {
-      stopAnimation(targetElement!);
+      getCrash(targetElement!);
     }
   }
 };
