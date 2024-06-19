@@ -12,6 +12,8 @@ import { deleteRaceField } from "../../../../util/delete-race-field";
 import { startCar } from "../../../../util/start-car";
 import { hideRacefield } from "../../../../util/hide-race-field";
 import { stopCar } from "../../../../util/stop-car";
+import { prepareCar } from "../../../../util/prepare-car";
+import { animateCar } from "../../../../util/animate-car";
 
 export default class GameSpace extends View {
   private gameSpace!: HTMLElement;
@@ -71,7 +73,12 @@ export default class GameSpace extends View {
         deleteRaceField(raceFieldTarget!);
         break;
       case "START":
-        startCar(raceFieldTarget!);
+        prepareCar(raceFieldTarget!).then((carInfo) => {
+          if (carInfo) {
+            animateCar(carInfo.time, carInfo.targetElement);
+            startCar(raceFieldTarget!);
+          }
+        });
         break;
       case "STOP":
         stopCar(raceFieldTarget!);
