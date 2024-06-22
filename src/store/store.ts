@@ -8,4 +8,5 @@ export const store: Store = {
   raceCount: 4,
   raceField: null,
   currentPage: 1,
+  winners: [],
 };

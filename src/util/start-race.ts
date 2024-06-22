@@ -3,7 +3,9 @@ import { animateCar } from "./animate-car";
 import { getCrash } from "./get-crash";
 import { getWinner } from "./get-winner";
 import { prepareCar } from "./prepare-car";
+import { showWinner } from "./show-winner";
 import { startCar } from "./start-car";
+import { stopAnimation } from "./stop-animation";
 
 export const startRace = async () => {
   const raceFields = document.querySelectorAll(".race-field");
@@ -32,5 +34,6 @@ export const startRace = async () => {
     })
   );
   const winner = getWinner(results);
-  console.log(winner);
+  showWinner(winner!);
+  preparedCars.forEach((car) => stopAnimation(car?.targetElement!));
 };

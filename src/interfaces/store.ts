@@ -6,4 +6,5 @@ export interface Store {
   raceCount: number;
   raceField: HTMLElement | null;
   currentPage: number;
+  winners: Array<{}>
 }

@@ -17,5 +17,6 @@ export const CssClasses = {
   CONTAINER: "container",
   NAVPAGES: "nav-pages",
   PREV: "prev",
-  NEXT: "next"
+  NEXT: "next",
+  MODALWINDOW: "modal-window",
 };
