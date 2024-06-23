@@ -22,18 +22,18 @@ export const startRace = async () => {
 
   const results = await Promise.all(
     preparedCars.map(async (car) => {
-      const { time, targetElement } = car!;
-      animateCar(time, targetElement);
-      const idTargetElement = +targetElement.getAttribute("id")!;
+      const { time, raceImg } = car!;
+      animateCar(time, raceImg);
+      const idTargetElement = +raceImg.getAttribute("id")!;
       const response = await switchEngineToDrive(idTargetElement);
       if (response!.success === false) {
-        getCrash(targetElement!);
+        getCrash(raceImg!);
       }
-      startCar(targetElement as HTMLElement);
+      startCar(raceImg as HTMLElement);
       return car;
     })
   );
   const winner = getWinner(results);
   showWinner(winner!);
-  preparedCars.forEach((car) => stopAnimation(car?.targetElement!));
+  preparedCars.forEach((car) => stopAnimation(car?.raceImg!));
 };

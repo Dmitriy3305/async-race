@@ -9,7 +9,7 @@ export const CssClasses = {
   GAMESPACE: "game-space",
   RACECOUNTER: "race-counter",
   PAGECOUNTER: "page-counter",
-  WINNERSOUNTER: "page-counter",
+  WINNERSOUNTER: "winners-counter",
   RACEFIELD: "race-field",
   RACENAME: "race-name",
   RACEIMG: "race-img",
@@ -19,4 +19,6 @@ export const CssClasses = {
   PREV: "prev",
   NEXT: "next",
   MODALWINDOW: "modal-window",
+  WINNERSTABLE: "winners-table",
+  WINNERSSTRING: "winners-string",
 };

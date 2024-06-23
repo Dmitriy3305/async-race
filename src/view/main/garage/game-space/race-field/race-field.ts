@@ -33,6 +33,7 @@ export default class RaceField extends View {
     const btnStart = new BtnStart();
     const btnStop = new BtnStop();
     const raceImg = new RaceImg(color, id);
+    raceImg.getHtmlElement()!.setAttribute("color", color);
     const finishImg = new FinishImg();
     container.append(
       btnSelect.getHtmlElement()!,

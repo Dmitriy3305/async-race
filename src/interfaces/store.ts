@@ -1,3 +1,5 @@
+import { Winner } from "./winner";
+
 export interface Store {
   nameForCreate: string;
   nameForUpdate: string;
@@ -6,5 +8,5 @@ export interface Store {
   raceCount: number;
   raceField: HTMLElement | null;
   currentPage: number;
-  winners: Array<{}>
+  winners: Winner[];
 }

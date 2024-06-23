@@ -75,7 +75,7 @@ export default class GameSpace extends View {
       case "START":
         prepareCar(raceFieldTarget!).then((carInfo) => {
           if (carInfo) {
-            animateCar(carInfo.time, carInfo.targetElement);
+            animateCar(carInfo.time, carInfo.raceImg);
             startCar(raceFieldTarget!);
           }
         });

@@ -1,8 +1,9 @@
 import View from "../../view";
 import { CssClasses } from "../../../util/const/css-classes";
 import { Tags } from "../../../util/const/tags";
-import PageCounter from "./page-counter/page-counter";
 import WinnersCounter from "./winners-counter/winners-counter";
+import { store } from "../../../store/store";
+import WinnersTable from "./winners-table/winners-table";
 
 export default class MainWinners extends View {
   mainWinners: HTMLElement;
@@ -14,12 +15,19 @@ export default class MainWinners extends View {
     };
     super(params);
     this.mainWinners = this.getHtmlElement()!;
-    this.addItems();
+    this.createWinnersCounter();
+    this.createWinnersTable();
   }
 
-  addItems() {
-    const pageCounter = new PageCounter(5).getHtmlElement()!;
-    const winnersCounter = new WinnersCounter(5).getHtmlElement()!;
-    this.mainWinners.append(winnersCounter, pageCounter);
+  createWinnersCounter() {
+    const winnersCounter = new WinnersCounter(
+      store.winners.length
+    ).getHtmlElement()!;
+    this.mainWinners.append(winnersCounter);
+  }
+
+  createWinnersTable() {
+    const winnersTable = new WinnersTable().getHtmlElement()!;
+    this.mainWinners.append(winnersTable);
   }
 }

@@ -1,6 +1,5 @@
 export interface Winner {
-    time: number;
-    targetElement: HTMLElement;
-    name?: string;
-  }
-  
+  raceName?: string;
+  raceImg?: HTMLElement;
+  time: number;
+}
