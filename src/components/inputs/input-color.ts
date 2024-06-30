@@ -14,9 +14,7 @@ export default class InputColor extends View {
     this.updateValueOnStore(
       this.viewElementCreator.getElement()! as HTMLInputElement
     );
-    this.viewElementCreator
-      .getElement()!
-      .setAttribute("value", "#008614");
+    this.viewElementCreator.getElement()!.setAttribute("value", "#008614");
   }
 
   updateValueOnStore(input: HTMLInputElement) {

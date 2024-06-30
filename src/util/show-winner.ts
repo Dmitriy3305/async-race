@@ -7,6 +7,7 @@ export const showWinner = (winner: Winner) => {
   if (!winner.raceImg) {
     return;
   }
+  
   const parentElement = winner.raceImg.parentNode as HTMLElement | null;
 
   if (!parentElement) {
@@ -27,7 +28,6 @@ export const showWinner = (winner: Winner) => {
   const main = document.querySelector(".main-garage") as HTMLElement;
   const modalWindow = new ModalWindow();
   const modalContent = modalWindow.getHtmlElement()!;
-
   const time = Number(parseFloat(String((winner.time / 1000).toFixed(2))));
 
   if (modalContent) {

@@ -22,7 +22,7 @@ export const updateWinnersTable = () => {
         const raceColor =
           store.winners[i]!.raceImg!.parentElement!.getAttribute("color");
         const raceImg = new RaceImg(raceColor!, i).getHtmlElement()!;
-        raceImg.classList.add('winner');
+        raceImg.classList.add("winner");
         const time =
           store.winners[i]?.time !== undefined
             ? String(store.winners[i].time)
