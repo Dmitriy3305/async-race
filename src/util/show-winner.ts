@@ -28,7 +28,7 @@ export const showWinner = (winner: Winner) => {
   const modalWindow = new ModalWindow();
   const modalContent = modalWindow.getHtmlElement()!;
 
-  const time = Number(parseFloat(String(winner.time / 1000)));
+  const time = Number(parseFloat(String((winner.time / 1000).toFixed(2))));
 
   if (modalContent) {
     modalContent.innerHTML = `
