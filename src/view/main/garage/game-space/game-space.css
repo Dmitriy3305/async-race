@@ -1,0 +1,6 @@
+.game-space {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vw;
+  gap: 1vw;
+}

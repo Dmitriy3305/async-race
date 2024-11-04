@@ -1,0 +1,12 @@
+.nav-pages {
+  display: flex;
+  width: 100%;
+  gap: 1vw;
+  justify-content: center;
+  padding-top: 2vw;
+}
+
+.button.prev,
+.button.next {
+  background-color: rgb(90, 92, 89);
+}

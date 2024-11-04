@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button {
+  width: 8rem;
+  height: 1rem;
+  min-width: 10rem;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background: #0b63f6;
+  box-shadow: 0 5px 0 #003cc5;
+}
+
+.button:hover {
+  background: #003cc5;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+.input {
+  width: 10rem;
+  height: 1rem;
+}
+
+@media ((min-width: 320px) and (max-width: 479px)) {
+  html {
+    font-size: 14px;
+  }
+  .button {
+    height: 1rem;
+    min-width: 10.3rem;
+    font-size: 1rem;
+  }
+
+  .input {
+    width: 5rem;
+    height: 1.4rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2vw;
+    place-items: center;
+  }
+
+  .race-name {
+    order: -1;
+    font-size: 1.5rem;
+  }
+
+  .race-counter {
+    font-size: 1.5rem;
+  }
+
+  .page-counter {
+    font-size: 1.5rem;
+  }
+
+  .finish-img {
+    margin-right: 14vw;
+    width: 5rem;
+    margin-bottom: -9rem;
+  }
+  .race-img {
+    margin-top: -1.5rem;
+    width: 5rem;
+    height: 10rem;
+    margin-bottom: -4rem;
+  }
+
+  .fire::before {
+    top: 2rem;
+    left: 3.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media ((min-width: 480px) and (max-width: 767px)) {
+  .button {
+    height: 1rem;
+    min-width: 9rem;
+    font-size: 1rem;
+  }
+
+  .input {
+    width: 9rem;
+    height: 1.5rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2vw;
+    place-items: center;
+  }
+
+  .race-name {
+    order: -1;
+    font-size: 1.5rem;
+  }
+
+  .race-counter {
+    font-size: 1.5rem;
+  }
+
+  .page-counter {
+    font-size: 1.5rem;
+  }
+
+  .finish-img {
+    margin-right: 14vw;
+    width: 5rem;
+    margin-bottom: -10rem;
+  }
+  .race-img {
+    margin-top: -1.5rem;
+    width: 5rem;
+    height: 10rem;
+    margin-bottom: -4rem;
+  }
+
+  .fire::before {
+    top: 2rem;
+    left: 3.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media ((min-width: 768px) and (max-width: 1023px)) {
+  html {
+    font-size: 10px;
+  }
+  .button {
+    width: 21rem;
+    height: 1.5rem;
+    min-width: 10rem;
+    font-size: 1.4rem;
+  }
+
+  .input {
+    width: 21rem;
+    height: 2rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2vw;
+    place-items: center;
+  }
+
+  .race-name {
+    order: -1;
+    font-size: 2rem;
+  }
+
+  .race-counter {
+    font-size: 2rem;
+  }
+
+  .page-counter {
+    font-size: 2rem;
+  }
+
+  .finish-img {
+    margin-right: 13rem;
+    width: 8rem;
+    margin-bottom: -12rem;
+  }
+  .race-img {
+    margin-top: -1.5rem;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: -3rem;
+  }
+
+  .fire::before {
+    top: 1rem;
+    left: 7rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media ((min-width: 1024px) and (max-width: 1439px)) {
+  html {
+    font-size: 25px;
+  }
+  .button {
+    height: 1rem;
+    min-width: 10rem;
+  }
+
+  .input {
+    width: 10rem;
+    height: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 32px;
+  }
+  .button {
+    height: 1rem;
+    min-width: 10rem;
+    font-size: 0.7rem;
+  }
+
+  .input {
+    width: 10rem;
+    height: 1rem;
+  }
+}

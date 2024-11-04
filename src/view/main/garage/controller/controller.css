@@ -1,0 +1,12 @@
+.controller {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+.container-create,
+.container-update,
+.container-race-generate {
+  display: flex;
+  gap: 1vw;
+}

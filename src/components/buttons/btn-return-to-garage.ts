@@ -1,0 +1,16 @@
+import { CssClasses } from "../../util/const/css-classes";
+import { Tags } from "../../util/const/tags";
+import { returnToGarage } from "../../util/return-to-garage";
+import View from "../../view/view";
+
+export default class BtnReturnToGarage extends View {
+  constructor() {
+    const params = {
+      tag: Tags.BTN,
+      classNames: [CssClasses.BTN],
+      textContent: "RETURN",
+      callback: () => returnToGarage(),
+    };
+    super(params);
+  }
+}

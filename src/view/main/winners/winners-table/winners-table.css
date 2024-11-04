@@ -1,0 +1,106 @@
+.winners-counter {
+  padding: 1vw;
+}
+
+.winners-table {
+  display: flex;
+  flex-direction: column;
+}
+.winners-string {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+}
+
+.winners-string > * {
+  text-align: center;
+  font-size: 1rem !important;
+  gap: 5vw;
+}
+
+.name-race {
+  display: flex;
+  width: 10vw;
+}
+
+.winner > * {
+  gap: 5vw;
+}
+
+.id-race {
+  width: 3vw;
+}
+
+.time-race {
+  padding-left: 5vw;
+}
+
+@media ((min-width: 768px) and (max-width: 1023px)) {
+  .winners-string > * {
+    font-size: 2vw !important;
+  }
+
+  .winners-counter {
+    font-size: 2vw;
+  }
+
+  .winner {
+    margin-top: -2vw;
+    width: 10vw;
+  }
+}
+
+@media ((min-width: 480px) and (max-width: 767px)) {
+  .winners-string {
+    width: 90%;
+  }
+
+  .id-race {
+    width: 5vw;
+  }
+
+  .winners-string > * {
+    font-size: 3vw !important;
+  }
+
+  .winners-counter {
+    font-size: 3vw !important;
+  }
+
+  .name-race {
+    width: 15vw;
+  }
+
+  .winner {
+    margin-top: -7vw;
+    width: 15vw;
+  }
+}
+
+@media ((min-width: 320px) and (max-width: 479px)) {
+  .winners-string {
+    width: 90%;
+  }
+
+  .id-race {
+    width: 10vw;
+  }
+
+  .winners-string > * {
+    font-size: 4vw !important;
+  }
+
+  .winner {
+    margin-top: -7vw;
+    width: 20vw;
+  }
+
+  .winners-counter {
+    font-size: 4vw;
+  }
+  .winner {
+    margin-top: -7vw;
+    width: 50vw;
+  }
+}
